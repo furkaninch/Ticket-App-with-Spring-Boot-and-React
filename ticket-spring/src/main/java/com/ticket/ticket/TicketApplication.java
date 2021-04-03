@@ -32,14 +32,13 @@ public class TicketApplication {
 				user.setUsername("user"+i);
 				userService.save(user);
 				
-			for (int j = 1 ; j<=15 ; j++ ) {
+			for (int j = 1 ; j<=2 ; j++ ) {
 				Ticket ticket = new Ticket();
 				ticket.setCategory("category");
 				ticket.setDetails("details" + j);
 				ticket.setPriority("Urgent");
 				ticket.setSubject("subject" + j);
 				ticket.setStatus("status");
-//				ticket.setUser(user);
 				ticketService.add(ticket,user);
 			}
 			}
